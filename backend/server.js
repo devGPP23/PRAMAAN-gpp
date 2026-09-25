@@ -7,6 +7,7 @@ import morgan from 'morgan';
 import { Server as SocketIOServer } from 'socket.io';
 import mongoose from 'mongoose';
 import { connectDB } from './config/db.js';
+import authRoutes from './routes/authRoutes.js';
 
 dotenv.config();
 
@@ -95,6 +96,9 @@ app.get('/api/health', (req, res) => {
     uptime: `${process.uptime().toFixed(1)}s`,
   });
 });
+
+// API Routes
+app.use('/api/auth', authRoutes);
 
 // 404 Route Handler
 app.use((req, res, next) => {
