@@ -12,7 +12,8 @@
     "frontend": "npm run dev --workspace=frontend",
     "backend": "npm run dev --workspace=backend",
     "backend:start": "npm run start --workspace=backend",
-    "build": "npm run build --workspace=frontend"
+    "build": "npm run build --workspace=frontend",
+    "preview": "npm run preview --workspace=frontend"
   },
   "keywords": [
     "praman",
