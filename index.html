@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRAMAN | AI-Powered GeM Bid Compliance Verification Platform</title>
+    <!-- Tailwind CSS CDN for instant styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              gem: {
+                blue: '#0F2C59',
+                gold: '#E5A93C',
+                light: '#F8FAFC',
+                dark: '#0B132B'
+              },
+              praman: {
+                emerald: '#059669',
+                rose: '#E11D48',
+                amber: '#D97706',
+                cyan: '#0891B2',
+                slate: '#0F172A'
+              }
+            },
+            fontFamily: {
+              sans: ['Outfit', 'Inter', 'sans-serif'],
+              mono: ['Fira Code', 'Courier New', 'monospace']
+            }
+          }
+        }
+      }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#0B132B] text-slate-100 font-sans antialiased min-h-screen selection:bg-cyan-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
